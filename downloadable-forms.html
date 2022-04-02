@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloadable Forms - Damayan sa Cavite Community Multi-Purpose Cooperative</title>
+    <!-- Tab Icon-->
+
+    <link rel="icon" href="img/tab-icon.png">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Local Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" id="fontawesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=2.4" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        body {
+            background-image: url(../img/hero-bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        #main-content {
+            height: 100vh;
+            margin-top: 175px;
+        }
+        
+        .download-links:hover {
+            color: #ff6501;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav id="nav" class="navbar navbar-light navbar-expand-xl fixed-top">
+        <div class="container-fluid py-2">
+            <!-- Nav Brand-->
+            <img class="nav-img-logo ps-4  ms-4 d-none d-sm-block" src="img/navbar-logo.png" alt="Logo">
+            <img class="nav-img-logo d-block d-sm-none ms-5" src="img/dacco-logo.svg" alt="">
+            <!-- Burger Icon -->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Nav Collapse-->
+            <div class="nav-menu collapse navbar-collapse text-center " id="navmenu">
+                <ul class="nav-ul navbar-nav ms-auto nav-pills ">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link">&#160;&#160;Home&#160;&#160;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link ">&#160;&#160;About&#160;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#our-services" class="nav-link ">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#FAQs" class="nav-link ">&#160;&#160;FAQs&#160;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link ">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" onclick="window.open('downloadable-forms.html','_blank');">
+                            Download Forms
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section id="main-content" class="container">
+        <div class="section-head col-sm-12 mb-5">
+            <h4><span>Downloadable</span> Forms</h4>
+        </div>
+        <p style="color: #ff6501;">Please click the link to download the files</p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item h3"><a class="download-links" href="forms/example.docx" download="fileNameHere1">Form for item#1</a> </li>
+            <li class="list-group-item h3"><a class="download-links" href="forms/example.docx" download="fileNameHere2">Form for item#2</a> </li>
+            <li class="list-group-item h3"><a class="download-links" href="forms/example.docx" download="fileNameHere3">Form for item#3</a> </li>
+            <li class="list-group-item h3"><a class="download-links" href="forms/example.docx" download="fileNameHere4">Form for item#4</a> </li>
+            <li class="list-group-item h3"><a class="download-links" href="forms/example.docx" download="fileNameHere5">Form for item#5</a> </li>
+            <li class="list-group-item h3"><a class="download-links" href="forms/example.docx" download="fileNameHere6">Form for item#6</a> </li>
+        </ul>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4 pb-4 top-footer">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Barbershop info -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <!--
+                            <h6 class="text-uppercase mb-4 font-weight-bold footer-title">
+                            Damayan sa Cavite Community Multi-Purpose Cooperative
+                        </h6>
+                        -->
+                        <img class="footer-img-logo" src="img/dacco-logo.svg">
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+                    <!-- Top Service -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold footer-title">Quick Links</h6>
+                        <ul>
+                            <li>
+                                <a class=" text-decoration-none py-2" href="#" onclick="window.open('organization-chart.html');">Organization Chart</a>
+                            </li>
+                            <li>
+                                <a class=" text-decoration-none py-2" href="#" onclick="window.open('coopserver.html');">Coopserver</a>
+                            </li>
+                            <li>
+                                <a class=" text-decoration-none py-2" href="#" onclick="window.open('payments.html');">Payments</a>
+                            </li>
+                            <li>
+                                <a class=" text-decoration-none py-2" href="#" onclick="window.open('activities.html');">Activities</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+                    <!-- Contact -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold footer-title">Contact</h6>
+                        <p><i class="fas fa-home mr-3"></i> 2nd Floor DACCO MPC Building, #40 Anabu II-B 4103 Imus, Philippines</p>
+                        <p><i class="fas fa-envelope mr-3"></i> daccoiib@yahoo.com</p>
+                        <p><i class="fa-solid fa-mobile-screen-button"></i> + 0917 544 8439</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Follow Us -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold footer-title">Follow us</h6>
+                        <!-- Facebook -->
+                        <a class="btn btn-primary btn-floating m-1 " style="background-color: #3b5998; width: 40px;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                        <!-- Twitter -->
+                        <a class="btn btn-primary btn-floating m-1 " style="background-color: #55acee; width: 40px;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                        <!-- Google -->
+                        <a class="btn btn-primary btn-floating m-1 " style="background-color: #dd4b39; width: 40px;" href="#!" role="button"><i class="fab fa-google"></i></a>
+                        <!-- Instagram -->
+                        <a class="btn btn-primary btn-floating m-1 " style="background-color: #ac2bac; width: 40px;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary btn-floating m-1 " style="background-color: #0082ca; width: 40px;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Github -->
+                        <a class="btn btn-primary btn-floating m-1 " style="background-color: #333333; width: 40px;" href="#!" role="button"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-4 text-light bottom-footer">
+            © 2022 Copyright:
+            <a class="text-white text-decoration-none" href="#!">Damayan sa Cavite Community Multi-Purpose Cooperative</a>
+            <div class="text-center mt-1">
+                Created by: <a class="developer-link" href="">Warren L. Tapawan</a>
+            </div>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- Local JS -->
+    <script src="js/main.js"></script>
+    <script>
+        //AddEventListener for all .download-links
+        var queryAll = document.querySelectorAll('.download-links');
+
+        for (i = 0; i < queryAll.length; ++i) {
+            queryAll[i].addEventListener('click', function() {
+                alert('Downloading will start for a few seconds please wait...')
+            })
+        }
+    </script>
+
+    <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

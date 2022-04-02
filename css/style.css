@@ -4,6 +4,14 @@
     --dark: #000a2d;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+.developer-link:hover {
+    color: var(--primary);
+}
+
 .btn-primary {
     background-color: var(--primary);
     border-color: var(--secondary);
@@ -18,6 +26,44 @@
 .text-primary {
     color: var(--primary);
 }
+
+.section-head {
+    margin-bottom: 60px;
+}
+
+.section-head h4 {
+    position: relative;
+    padding: 0;
+    color: var(--primary);
+    line-height: 1;
+    letter-spacing: 0.3px;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 30px;
+}
+
+.section-head h4:before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.section-head h4 span {
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: #2f2f2f
+}
+
+
+/**************************************** Home ****************************************/
 
 #home {
     width: 100%;
@@ -38,12 +84,8 @@ nav {
 }
 
 .nav-img-logo {
-    height: 70px;
+    height: 80px;
     padding-top: 0;
-}
-
-.nav-logo {
-    padding: 16px;
 }
 
 .nav-menu {
@@ -56,10 +98,11 @@ nav {
     display: flex;
     list-style-type: none;
     margin-bottom: 0;
+    background-color: white;
 }
 
 .nav-ul li {
-    padding: 16px 26px;
+    padding: 5px;
     text-decoration: none;
 }
 
@@ -78,22 +121,8 @@ nav {
     padding-bottom: 16px;
 }
 
-.nav-link:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--primary);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.nav-link:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.nav-ul li:hover {
+    background-color: var(--secondary);
 }
 
 
@@ -101,9 +130,12 @@ nav {
 
 #home {
     width: 100%;
-    height: 120vh;
+    height: 75vh;
     background-image: url(../img/hero-bg.jpg);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero-row,
@@ -125,7 +157,7 @@ nav {
 
 .hero-left-h1 {
     font-family: "Rufina", serif;
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 50px;
     color: var(--dark);
@@ -237,41 +269,6 @@ a:hover {
     display: inline-block;
     text-decoration: none;
     color: inherit;
-}
-
-.section-head {
-    margin-bottom: 60px;
-}
-
-.section-head h4 {
-    position: relative;
-    padding: 0;
-    color: var(--primary);
-    line-height: 1;
-    letter-spacing: 0.3px;
-    font-size: 34px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: none;
-    margin-bottom: 30px;
-}
-
-.section-head h4:before {
-    content: '';
-    width: 60px;
-    height: 3px;
-    background: var(--primary);
-    position: absolute;
-    left: 0px;
-    bottom: -10px;
-    right: 0;
-    margin: 0 auto;
-}
-
-.section-head h4 span {
-    font-weight: 700;
-    padding-bottom: 5px;
-    color: #2f2f2f
 }
 
 p.service_text {
@@ -943,4 +940,51 @@ p.awesome_line {
 
 .bottom-footer {
     background-color: var(--dark);
+}
+
+
+/************************************ Media Query *************************************/
+
+
+/* XL */
+
+@media (min-width: 1200px) {
+    .hero-left-h1 {
+        font-size: 60px;
+    }
+    .nav-ul {
+        background-color: transparent;
+    }
+}
+
+
+/* Lg */
+
+@media (min-width: 992px) {
+    #home {
+        height: 120vh;
+    }
+    .nav-ul li {
+        padding: 16px 26px;
+        text-decoration: none;
+    }
+    .nav-ul li:hover {
+        background-color: transparent;
+    }
+    .nav-link:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--primary);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .nav-link:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 }

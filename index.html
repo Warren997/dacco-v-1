@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Damayan sa Cavite Community Multi Purpose Cooperative">
+    <meta name="keywords" content="dacco-mpc, Dacco-mpc, DACCO-MPC, dacco, DACCO, mpc,MPC, Anabu 2 A, Damayan sa Cavite Community Multi Purpose Cooperative">
+    <meta name="author" content="Warren Tapawan">
     <title>Home - Damayan sa Cavite Community Multi-Purpose Cooperative</title>
+
     <!-- Tab Icon-->
-    <link rel="icon" href="dacco-logo.svg">
+    <link rel="icon" href="img/tab-icon.png">
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -23,6 +26,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" id="fontawesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=2.4" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -31,9 +39,10 @@
     <nav id="nav" class="navbar navbar-light navbar-expand-xl fixed-top">
         <div class="container-fluid py-2">
             <!-- Nav Brand-->
-            <img class="nav-img-logo ps-5  ms-5" src="img/dacco-logo-nav.svg" alt="Logo">
+            <img class="nav-img-logo ps-4  ms-4 d-none d-sm-block" src="img/navbar-logo.png" alt="Logo">
+            <img class="nav-img-logo d-block d-sm-none ms-3" src="img/dacco-logo.svg" alt="">
             <!-- Burger Icon -->
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Nav Collapse-->
@@ -46,17 +55,17 @@
                         <a href="#about" class="nav-link ">&#160;&#160;About&#160;</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services" class="nav-link ">Services</a>
+                        <a href="#our-services" class="nav-link ">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#price" class="nav-link ">&#160;&#160;Blog&#160;</a>
+                        <a href="#FAQs" class="nav-link ">&#160;&#160;FAQs&#160;</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link ">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-primary">
-                            #0917 544 8439
+                        <button class="btn btn-primary" onclick="window.open('downloadable-forms.html','_blank');">
+                            Download Forms
                         </button>
                     </li>
                 </ul>
@@ -70,23 +79,23 @@
         <div class="container-fluid hero-container" style="padding-right: 0px;">
             <div class="row hero-row">
                 <!-- Hero Left -->
-                <div class="hero-left col-6  ">
-                    <div class="ms-5 ps-5">
-                        <h5 class="fw-bold ">Achieve your finantial goals</h5>
+                <div class="hero-left col-md-6 col-12" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="ms-xl-5 ps-xl-5 ms-2 ps-2">
+                        <h5 class="fw-bold ">Achieve your financial goals</h5>
                         <h1 class="hero-left-h1 mt-4">Small Business Loans For Daily Expenses.</h1>
-                        <a href="#" class="btn hero-btn fw-bold">How to apply?</a>
+                        <a href="#" class="btn hero-btn fw-bold" onclick="window.open('how-to-apply.html','_blank');">How to apply?</a>
                     </div>
                 </div>
                 <!-- Hero Right -->
-                <div class="hero-right col-6">
+                <div class="hero-right col-md-6 col-0 d-none d-md-block">
                     <img src="img/dacco-building.jpg" alt="">
                 </div>
             </div>
             <!-- Hero Footer -->
-            <div class="row me-0 pe-0">
-                <div class="col-1">
+            <div class="row me-0 pe-0 d-none d-lg-flex">
+                <div class="col-xl-1 col-0">
                 </div>
-                <div class="col-11 me-0 pe-0">
+                <div class="col-xl-11 col-12 me-0 pe-0">
                     <div class="hero-footer row m-0 ">
                         <div class="col-3 hero-footer-img p-0">
                             <img src="img/hero_footer.png" alt="">
@@ -130,14 +139,13 @@
 
 
     <!-- Why Choose Us? -->
-
     <div class="feat bg-gray pt-5 pb-5 mt-5">
         <div class="container">
-            <div class="row">
-                <div class="section-head col-sm-12">
-                    <h4><span>Why Choose</span> Us?</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae similique perferendis deserunt ipsum temporibus illo, quibusdam accusantium libero deleniti unde corporis, dolore est vitae dolor laboriosam in. Nobis, nihil dicta.</p>
-                </div>
+            <div class="section-head">
+                <h4><span>Why Choose</span> Us?</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae similique perferendis deserunt ipsum temporibus illo, quibusdam accusantium libero deleniti unde corporis, dolore est vitae dolor laboriosam in. Nobis, nihil dicta.</p>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-lg-4 col-sm-6">
                     <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
                         <h6>Modern Design</h6>
@@ -179,7 +187,7 @@
     </div>
 
 
-
+    <!-- About US -->
     <section id="about">
         <div class="container">
             <!-- Header -->
@@ -197,14 +205,14 @@
                         consectetur similique praesentium tenetur ex!</p>
                 </div>
                 <!-- Col-2 -->
-                <div class="col-md-6 mt-4 order-md-12 order-1">
+                <div class="col-md-6 mt-4 order-md-12 order-1" data-aos="fade-up" data-aos-duration="1000">
                     <img class="about-image img-fluid" src="img/our-company.jpg" alt="">
                 </div>
             </div>
             <!-- Row 2 -->
             <div class="row mt-5  mb-5 pb-2">
                 <!-- Col-1 -->
-                <div class="col-md-6 mt-4  order-md-12 order-1">
+                <div class="col-md-6 mt-4  order-md-12 order-1" data-aos="fade-up" data-aos-duration="1000">
                     <img class="about-image img-fluid" src="img/mission&vision.jpg" alt="" style="height:100%;">
                 </div>
                 <!-- Col-2 -->
@@ -235,7 +243,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="single-serviecs-block">
                         <i class="fas fa-print"></i>
@@ -265,32 +273,28 @@
 
     <!-- Technical Statistics -->
     <section id="statistics" class="mb-5 mt-5">
-
         <div class="container pt-5">
             <p class="fw-bold text-center mb-3 stat-text">Great Reviews of our Services</p>
             <h1 class="text-center stat-text mb-3">Technical Statistics</h1>
-
             <div class="row mt-5 stat-text">
                 <div class="col-3 text-center">
-                    <h1 class="fw-bold">Number</h1>
-                    <h6>Year or Experience</h6>
+                    <h1 class="fw-bold counter-count count">23</h1>
+                    <h6 class="heading">Year or Experience</h6>
                 </div>
                 <div class="col-3 text-center">
-                    <h1 class="fw-bold">Number</h1>
+                    <h1 class="fw-bold counter-count count">45,374</h1>
                     <h6>Satisfied Customers</h6>
                 </div>
                 <div class="col-3 text-center">
-                    <h1 class="fw-bold">Number</h1>
+                    <h1 class="fw-bold counter-count count">2,520</h1>
                     <h6>Project Completed</h6>
                 </div>
                 <div class="col-3 text-center">
-                    <h1 class="fw-bold">Number</h1>
+                    <h1 class="fw-bold counter-count count">120</h1>
                     <h6>Get Awards</h6>
                 </div>
             </div>
-
         </div>
-
     </section>
 
 
@@ -300,7 +304,7 @@
         <div class="section-head col-sm-12">
             <h4><span>Testimo</span>nials</h4>
         </div>
-        <div class="d-flex align-items-center pb-5 mh-100">
+        <div class="d-flex align-items-center pb-5 mh-100" data-aos="fade-up" data-aos-duration="1000">
             <a class="carousel-control-prev text-decoration-none " href="#mycarousel" role="button" data-bs-slide="prev">
                 <div class="d-flex flex-column justify-content-center me-2 ms-auto left">PREV<span class="fas fa-arrow-left"></span> </div> <span class="sr-only">Previous</span>
             </a>
@@ -374,11 +378,11 @@
                 <div class="col-md-12">
                     <div class="site-heading text-center mt-5">
                         <h2>Our <span>Team</span></h2>
-                        <h4>Meet our awesome and expert team members</h4>
+                        <h4>Meet our awesome and expert team leaders</h4>
                     </div>
                 </div>
             </div>
-            <div class="row team-items">
+            <div class="row team-items" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-md-4 single-item">
                     <div class="item">
                         <div class="thumb">
@@ -493,13 +497,28 @@
 
 
 
-    <!-- Frequntly Ask Questions -->
+    <!-- News -->
+    <div id="news" class="my-5 pb-5">
+        <div class="section-head col-sm-12">
+            <h4><span>Recent</span> News</h4>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <!-- This is From --- https://developers.facebook.com/docs/plugins/page-plugin/ --- -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="newsIframe" class="embed-responsive-item" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDACCO1999&tabs=timeline&width=500&height=700&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="500" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+    </div>
 
-    <div class="container my-5">
+
+
+    <!-- Frequntly Ask Questions -->
+    <div id="FAQs" class="container my-5">
         <div class="section-head col-sm-12">
             <h4><span>Frequntly Ask</span> Questions</h4>
         </div>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion" id="accordionPanelsStayOpenExample" data-aos="fade-up" data-aos-duration="1000">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -574,9 +593,35 @@
     </div>
 
 
+    <!-- Our Location -->
+    <div id="maps" class="our-location container py-5 mb-5">
+        <div class="section-head col-sm-12">
+            <h4><span>Our</span> Location</h4>
+        </div>
+
+        <!--Google Map Jeff Meat & Fish Vendor 
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.7130860819557!2d120.93874411744385!3d14.386005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d3759b5fc537%3A0x3a3e9ee35b16d17c!2sJeff%20Meat%20%26%20Fish%20Vendor!5e0!3m2!1sen!2sph!4v1648692232195!5m2!1sen!2sph"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        -->
+
+        <!-- Google Maps 34 Crispulo Aguinaldo St -->
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.711294577089!2d120.93867961449645!3d14.386101986154825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d3758f93700d%3A0x26b0eea8621defef!2s34%20Crispulo%20Aguinaldo%20St%2C%20Imus%2C%20Cavite!5e0!3m2!1sen!2sph!4v1648860837628!5m2!1sen!2sph"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+
+
+
+
+
+
 
     <!-- Footer -->
-    <footer id="contact" class="text-center text-lg-start">
+    <footer id="contact" class="text-center text-lg-start mt-5">
         <!-- Grid container -->
         <div class="container p-4 pb-4 top-footer">
             <!-- Section: Links -->
@@ -600,21 +645,20 @@
                     <!-- Top Service -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold footer-title">Quick Links</h6>
-                        <p>
-                            <a class=" text-decoration-none">Organization Chart</a>
-                        </p>
-                        <p>
-                            <a class=" text-decoration-none">Coopserver</a>
-                        </p>
-                        <p>
-                            <a class=" text-decoration-none">Download Forms</a>
-                        </p>
-                        <p>
-                            <a class=" text-decoration-none">Payments</a>
-                        </p>
-                        <p>
-                            <a class=" text-decoration-none">Activities</a>
-                        </p>
+                        <ul>
+                            <li>
+                                <a class=" text-decoration-none py-2" href="#" onclick="window.open('organization-chart.html');">Organization Chart</a>
+                            </li>
+                            <li>
+                                <a class=" text-decoration-none py-2" href="#" onclick="window.open('coopserver.html');">Coopserver</a>
+                            </li>
+                            <li>
+                                <a class=" text-decoration-none py-2" href="#" onclick="window.open('payments.html');">Payments</a>
+                            </li>
+                            <li>
+                                <a class=" text-decoration-none py-2" href="#" onclick="window.open('activities.html');">Activities</a>
+                            </li>
+                        </ul>
                     </div>
                     <!-- Grid column -->
                     <hr class="w-100 clearfix d-md-none" />
@@ -625,7 +669,7 @@
                         <h6 class="text-uppercase mb-4 font-weight-bold footer-title">Contact</h6>
                         <p><i class="fas fa-home mr-3"></i> 2nd Floor DACCO MPC Building, #40 Anabu II-B 4103 Imus, Philippines</p>
                         <p><i class="fas fa-envelope mr-3"></i> daccoiib@yahoo.com</p>
-                        <p><i class="fas fa-phone mr-3"></i> + 0917 544 8439</p>
+                        <p><i class="fa-solid fa-mobile-screen-button"></i> + 0917 544 8439</p>
                         <p><i class="fas fa-phone mr-3"></i> + 01 234 567 89</p>
                     </div>
                     <!-- Follow Us -->
@@ -654,13 +698,37 @@
         <div class="text-center p-4 text-light bottom-footer">
             © 2022 Copyright:
             <a class="text-white text-decoration-none" href="#!">Damayan sa Cavite Community Multi-Purpose Cooperative</a>
+            <div class="text-center mt-1">
+                Created by: <a href="" class="developer-link">Warren L. Tapawan</a>
+            </div>
         </div>
+
         <!-- Copyright -->
     </footer>
 
 
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script src="js/main.js"></script>
+    <!-- Local JS -->
+    <script src="js/main.js" type="module"></script>
+
+    <!-- Counter Up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/counterup.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script>
+        $('.count').countUp({
+            delay: 10,
+            time: 3000
+        });
+    </script>
+
+    <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
